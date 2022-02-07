@@ -1,0 +1,73 @@
+body {
+  font-family: "Open Sans";
+  text-align: -webkit-center;
+  background-color: #5fa1a1;
+}
+body > button {
+  height: 50px;
+  width: 150px;
+  font-family: "Open Sans";
+  font-size: 19px;
+  border-radius: 9%;
+  cursor: pointer;
+  margin: 0 25px 0 0;
+}
+.wrapper_timer {
+  margin: 0 0 25px 0;
+}
+#timer {
+  width: 190px;
+  padding: 10px;
+}
+#timer_show {
+  color: black;
+  margin-bottom: 7px;
+  font-size: 50px;
+}
+.timer_buttons {
+  margin: 10px;
+}
+#timer_button_run {
+  padding: 6px;
+  cursor: pointer;
+}
+#timer_button_stop {
+  padding: 6px;
+  cursor: pointer;
+}
+#timer_button_reset {
+  padding: 6px;
+  cursor: pointer;
+}
+#timer_button_continue {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.countdown{
+    margin: 100px 0;
+}
+.head {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.end_dhms {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(168, 221, 203);
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  border-radius: 50%;
+}

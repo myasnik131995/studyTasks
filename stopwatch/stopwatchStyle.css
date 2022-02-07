@@ -1,0 +1,23 @@
+body {
+  font-family: "Open Sans";
+  margin-top: 300px;
+  text-align: center;
+  background-color: beige;
+}
+#btn_timer, #btn_watch,.btn_stopwatch {
+  height: 50px;
+  width: 175px;
+  font-family: "Open Sans";
+  font-size: 19px;
+  border-radius: 9%;
+  cursor: pointer;
+  background-color: rgba(125, 192, 192, 0.644);
+}
+
+.btn_stopwatch{
+    margin: 0 0 15px 0;
+}
+
+.stopwatch_show{
+    font-size: 50px;
+}

@@ -1,0 +1,18 @@
+body {
+  font-family: "Open Sans";
+  margin-top: 300px;
+  text-align: center;
+  color: #fff;
+}
+#clock {
+  font-weight: 300;
+  font-size: 120px;
+}
+body > button {
+  height: 50px;
+  width: 150px;
+  font-family: "Open Sans";
+  font-size: 19px;
+  border-radius: 9%;
+  cursor: pointer;
+}
