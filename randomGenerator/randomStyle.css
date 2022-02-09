@@ -1,0 +1,24 @@
+#random_wrapper {
+  text-align: -webkit-center;
+}
+#change {
+  width: 350px;
+  height: 350px;
+  border: 2px solid black;
+  font-size: 35px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#button_change{
+    margin: 0 0 15px 0;
+}
+#btn_watch {
+  height: 50px;
+  width: 175px;
+  font-family: "Open Sans";
+  font-size: 19px;
+  border-radius: 9%;
+  cursor: pointer;
+  background-color: rgba(184, 204, 204, 0.644);
+  margin: 15px 0 0 0;
+}

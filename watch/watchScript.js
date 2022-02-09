@@ -39,3 +39,8 @@ let btnStopwatch = document.querySelector('#btn_stopwatch');
 btnStopwatch.onclick = function(){
     document.location.href = "/stopwatch/stopwatch.html";
 };
+
+let btnGenerate = document.querySelector('#btn_generate');
+btnGenerate.onclick = function(){
+    document.location.href = "/randomGenerator/randomIndex.html";
+};
