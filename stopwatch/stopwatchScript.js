@@ -43,10 +43,20 @@ resetBtn.addEventListener('click', () => {
 
 
 
-// функционал кнопок "К таймеру!" и "К часам!"
+
 let btnTimer = document.querySelector('#btn_timer');
-btnTimer.onclick = function () {
+btnTimer.onclick = function(){
     document.location.href = "/timer/timer.html";
+};
+
+let btnToCalc = document.querySelector('#btn_calc');
+btnToCalc.onclick = function(){
+    document.location.href = "/calculator/calc.html";
+};
+
+let btnGenerate = document.querySelector('#btn_generate');
+btnGenerate.onclick = function(){
+    document.location.href = "/randomGenerator/randomIndex.html";
 };
 
 let btnWatch = document.querySelector('#btn_watch');

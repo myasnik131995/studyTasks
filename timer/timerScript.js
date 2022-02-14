@@ -59,7 +59,7 @@ let ResetTimer = document.querySelector('#timer_button_reset').addEventListener(
 });
 
 // обратный отсчет
-let date = new Date('Feb 11 2022 18:00:00');
+let date = new Date('Jul 13 2022 00:00:00');
 
 function counts() {
     let currentDate = new Date();
@@ -80,11 +80,24 @@ function counts() {
 counts();
 setInterval(counts, 1000);
 
-// функционал для кнопок "К секундомеру!" и "К часам!"
-let btnWatch = document.querySelector('#btn_watch').onclick = function () {
+
+
+let btnWatch = document.querySelector('#btn_watch');
+btnWatch.onclick = function () {
     document.location.href = "/watch/watch.html";
 };
 
-let btnStopwatch = document.querySelector('#btn_stopwatch').onclick = function () {
+let btnStopwatch = document.querySelector('#btn_stopwatch');
+btnStopwatch.onclick = function(){
     document.location.href = "/stopwatch/stopwatch.html";
+};
+
+let btnGenerate = document.querySelector('#btn_generate');
+btnGenerate.onclick = function(){
+    document.location.href = "/randomGenerator/randomIndex.html";
+};
+
+let btnToCalc = document.querySelector('#btn_calc');
+btnToCalc.onclick = function(){
+    document.location.href = "/calculator/calc.html";
 };
