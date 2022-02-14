@@ -3,13 +3,18 @@ let startBtn = document.querySelector('#start');
 let stopBtn = document.querySelector('#stop');
 let resetBtn = document.querySelector('#reset');
 
+let ms = 0;
 let sec = 0;
 let min = 0;
 let hrs = 0;
 let tmr;
 
 function tick (){
-        sec++;
+    ms++;
+    if (ms >= 10){
+        ms = 0;
+        sec ++;
+    }
    if (sec >= 60) {
        sec = 0;
        min++;
@@ -18,12 +23,12 @@ function tick (){
        min = 0;
        hrs++;
    }
-   stopwatchShow.textContent = (hrs > 9 ? hrs : "0" + hrs)  + ":" + (min > 9 ? min : "0" + min) + ":" + (sec > 9 ? sec : "0" + sec);
+   stopwatchShow.textContent = (hrs > 9 ? hrs : "0" + hrs)  + ":" + (min > 9 ? min : "0" + min) + ":" + (sec > 9 ? sec : "0" + sec) + ":" + (ms > 9 ? ms : "0" + ms);
 
 }
 
 startBtn.addEventListener('click', () => {
-    stopWatcch = setInterval(tick, 1000);
+    stopWatcch = setInterval(tick, 100);
 });
 
 stopBtn.addEventListener('click', () => {
@@ -32,7 +37,7 @@ stopBtn.addEventListener('click', () => {
 
 resetBtn.addEventListener('click', () => {
     clearInterval(stopWatcch);
-    stopwatchShow.innerHTML = '00:00:00';
+    stopwatchShow.innerHTML = '00:00:00:0000';
     sec = 0;
     min = 0;
     hrs = 0;

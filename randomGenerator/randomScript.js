@@ -12,11 +12,14 @@ btnChange.addEventListener('click', () => {
 // функционал для добавления фильмов в массив
 let btnAddFilms = document.querySelector('#btn_add');
 let inputFilm = document.querySelector('#input_film');
+let countFilms = document.querySelector('#count_film');
+let count = 0;
 
 function addFilmsOnClick() {
     changeArray.push(inputFilm.value);
     inputFilm.value = '';
-
+    count++;
+    countFilms.innerHTML = `Количество фильмов в генераторе: ${count}`;
 }
 
 btnAddFilms.addEventListener('click', addFilmsOnClick);
@@ -26,6 +29,14 @@ inputFilm.addEventListener('keyup', function(e){
     }
 });
 
+
+let btnReset = document.querySelector('#button_reset');
+btnReset.onclick = function(){
+    changeArray = [];
+    countFilms.innerHTML = '';
+    addText.innerHTML = '';
+    console.log(changeArray)
+};
 
 
 let btnWatch = document.querySelector('#btn_watch');

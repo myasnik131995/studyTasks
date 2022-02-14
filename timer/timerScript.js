@@ -11,17 +11,13 @@ let Starttimer = document.querySelector('#timer_button_run').addEventListener('c
     clearInterval(timer);
     timer = setInterval(function () {
         seconds = timeMinute % 60;
-        minutes = timeMinute / 60 % 60;
-        if (minutes < 10) {
-            console.log('num < 10');
-            minutes = "0" + timeMinute / 60 % 60;
-        }
-        hour = timeMinute / 60 / 60 % 60;
+        minutes = Math.trunc(timeMinute / 60 % 60);
+        hour = Math.trunc(timeMinute / 60 / 60 % 60);
         if (timeMinute <= 0) {
             clearInterval(timer);
             alert('Time is Over!');
         } else {
-            ShowTimer.innerHTML = `<div>${Math.trunc(hour)}:${Math.trunc(minutes)}:${seconds}</div>`;
+            ShowTimer.innerHTML = `<div>${hour<10 ? '0' : ''}${hour}:${minutes < 10 ? '0' : ''}${minutes}:${seconds<10 ? '0' : ''}${seconds}</div>`;
         }
         --timeMinute;
     }, 1000);

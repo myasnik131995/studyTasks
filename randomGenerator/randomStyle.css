@@ -25,3 +25,18 @@
 .add_films{
   margin: 0 0 15px 0;
 }
+#count_film{
+  margin-bottom: 15px;
+  font-family: "Open Sans";
+  font-size: 19px;
+}
+#button_reset{
+  margin-top: 15px;
+  height: 50px;
+  width: 175px;
+  border-radius: 9%;
+  cursor: pointer;
+  background-color: rgba(224, 93, 84, 0.644);
+  font-family: "Open Sans";
+  font-size: 19px;
+}
